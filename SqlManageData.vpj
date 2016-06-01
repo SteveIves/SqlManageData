@@ -99,6 +99,14 @@
                     CmdLine="SynSetupCompileScripts"
                     Type="Slick-C"/>
             </Target>
+            <Target
+                Name="Import Schema to Repository"
+                MenuCaption="&amp;Import Schema to Repository"
+                RunFromDir="%(ROOT)"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveAll">
+                <Exec CmdLine="rps_import.bat"/>
+            </Target>
         </Menu>
         <SynSettings>
             <SynSetting
@@ -169,7 +177,10 @@
         <Folder
             Name="Other Files"
             Filters="">
+            <F N="LICENSE.md"/>
+            <F N="README.md"/>
             <F N="rps.schema"/>
+            <F N="rps_import.bat"/>
         </Folder>
     </Files>
     <Config
@@ -267,6 +278,14 @@
                 <Exec
                     CmdLine="SynSetupCompileScripts"
                     Type="Slick-C"/>
+            </Target>
+            <Target
+                Name="Import Schema to Repository"
+                MenuCaption="&amp;Import Schema to Repository"
+                RunFromDir="%(ROOT)"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveAll">
+                <Exec CmdLine="rps_import.bat"/>
             </Target>
         </Menu>
         <SynSettings>
@@ -416,6 +435,14 @@
                     CmdLine="SynSetupCompileScripts"
                     Type="Slick-C"/>
             </Target>
+            <Target
+                Name="Import Schema to Repository"
+                MenuCaption="&amp;Import Schema to Repository"
+                RunFromDir="%(ROOT)"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveAll">
+                <Exec CmdLine="rps_import.bat"/>
+            </Target>
         </Menu>
         <SynSettings>
             <SynSetting
@@ -563,6 +590,14 @@
                 <Exec
                     CmdLine="SynSetupCompileScripts"
                     Type="Slick-C"/>
+            </Target>
+            <Target
+                Name="Import Schema to Repository"
+                MenuCaption="&amp;Import Schema to Repository"
+                RunFromDir="%(ROOT)"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveAll">
+                <Exec CmdLine="rps_import.bat"/>
             </Target>
         </Menu>
         <SynSettings>
